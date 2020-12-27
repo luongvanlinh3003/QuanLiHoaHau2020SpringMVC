@@ -1,0 +1,365 @@
+@charset "ISO-8859-1";
+.hh
+{
+  padding: 5px;
+  color: wheat;
+}
+.hh:hover
+{
+  border-bottom: 1px solid white;
+}
+.hi
+{
+  background-color: rgb(111, 109, 240);
+  padding: 10px;
+}
+
+.chus
+  {
+    text-align: left;
+    color: rgb(18, 26, 90);
+    padding: 10px;
+    padding-left: 30px;
+    margin-left: 99px;
+    margin-right: 99px;
+    margin-top: 50px;
+    border-bottom: 3px solid rgb(78, 40, 216);
+  }
+.saa
+{
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.chua2
+{
+  margin: 20px;
+  font-size: 15px;
+}
+.chua
+{
+  color: rgb(113, 69, 236);
+}
+.chua1
+{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 330px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+hr{
+  width: 70px;
+  margin-left: 0px;
+  border: 0;
+  border-top: 2px solid rgb(61, 4, 165);
+}
+.carousel-inner img {
+  width:100%;
+  height: 100%;
+}
+.pt-4
+{
+  background-color: rgb(50, 53, 248);
+  color: wheat;
+  font-size: 18px;
+}
+.as{
+  color: wheat !important;
+  font-size: 18px;
+}
+/* 
+trang chu
+ */
+ h5{
+    color: white;
+}
+
+.navgr {
+    display: flex;
+    background-color: #381C53;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    margin-left: -1.9%;
+    margin-right: -1.9%;
+    margin-top: -5px;
+}
+
+.title-while{
+    color: white;
+    font-size: medium;
+}
+
+p{
+    color: white;
+}
+
+.khung{
+    border: 5px dashed #987DA9;
+    background-color: #987DA9;
+}
+
+.Lienhe{
+    margin-left: 75%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+.btn-link{
+    margin-left: 60%;
+    margin-top: 70%;
+    color:white;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    justify-content: space-between;
+}
+
+.HH-slip{
+    margin-left: 55px;
+    margin-right: 45px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ChucmungHH{
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 70%;
+}
+
+.thisinh{
+    background-color:#E9E9EA;
+}
+
+
+.all-thisinh{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.all-bangiamkhao{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.all-tinnoibat{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.khung-4-anh{
+    margin-left: 62px;
+    margin-right: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text{
+    color:white;
+    font-size: medium;
+}
+
+/** Start login **/
+
+html, body {
+	width: 100%;
+	font-family: monospace;
+	font-size: 14px;
+}
+
+html a{
+	font-family: "Roboto" !important;
+}
+ul{
+	list-style-type: none;
+}
+#body-login {
+	background: linear-gradient(#2EBAD8, #694EC9);
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* start css dang nhap */
+#body-flex-login {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-login {
+	display: flex;
+	width: 760px;
+	height: 500px;
+	background-color: white;
+}
+
+#container-login-left {
+	background-image: url("../Image/backgroupdangnhap2.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 16px;
+}
+
+.header-login {
+	margin-top: 32px;
+}
+
+#text-logo {
+	font-size: 48px;
+}
+
+#hint-text-logo {
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+#header-top-left {
+	text-align: center;
+	color: white;
+}
+
+#header-bottom-left {
+	color: white;
+	margin-bottom: 60px;
+}
+
+#container-login-right {
+	padding: 0 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+}
+
+#header-top-right {
+	font-size: 20px;
+	color: #B7B7B7;
+}
+
+.actived {
+	color: #DA7C79;
+}
+.header-login span{
+	cursor: pointer;
+}
+#container-social-login {
+	align-self: flex-end;
+	margin-bottom: 16px;
+}
+
+#container-center-login-right input[type=text] {
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+#container-center-login-right input[type=submit] {
+	margin-top: 24px;
+	color: white;
+	font-size: 14px;
+}
+
+.material-text-input {
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+	outline: none;
+}
+
+.material-primary-button {
+	height: 38px;
+	border: 0;
+	background-color: #00909C;
+	width: 100%;
+	box-shadow: 0px 2px 4px 0px #000;
+	outline: none;
+}
+
+.material-primary-button:hover {
+	cursor: pointer;
+}
+
+.input-icon-email {
+	background: url("../Image/ic_email.png") no-repeat scroll 16px 13px;
+	padding-left: 42px;
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+}
+
+.input-icon-password {
+	background: url("../Image/ic_lock.png") no-repeat scroll 16px 10px;
+	padding-left: 42px;
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+}
+.input-icon-home{
+	background: url("../Image/home -icon.png") no-repeat scroll 16px 10px;
+	padding-left: 42px;
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+	color: gray;
+}
+.input-icon-user{
+	background: url("../Image/user-icon.png") no-repeat scroll 16px 10px;
+	padding-left: 42px;
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+	color: gray;
+}
+.container-signup-form{
+	display: none;
+}
+/** end css login **/
+
+ 
