@@ -4,6 +4,7 @@
 <%-- <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.min.css"/>"/> --%>
 <link rel="stylesheet" href="<c:url value="/resources/styles/Animate.css"/>"/>
 <link rel="stylesheet" href="<c:url value="/resources/fonts/fontawesome-free-5.12.1/css/all.min.css"/>"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <link rel="stylesheet" href="<c:url value="/resources/styles/Style.css"/>"/>

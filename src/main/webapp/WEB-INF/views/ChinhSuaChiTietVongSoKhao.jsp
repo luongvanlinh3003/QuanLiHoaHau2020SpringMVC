@@ -87,7 +87,7 @@
     </nav>
     
     <div align="center">
-        <h2>Cập nhật điểm vòng thi sơ khảo hoa hậu hoàn vũ 2020</h2>
+        <h2 class="custom-title">Cập nhật điểm vòng thi sơ khảo hoa hậu hoàn vũ 2020</h2>
         
         <form:form action="edit" method="post" modelAttribute="chitietvongsokhao" enctype="multipart/form-data">
             <table border="0" cellpadding="5">
@@ -115,7 +115,7 @@
                 </tr>  
                
                 <tr>
-                    <td colspan="2"><input type="submit" value="Lưu"></td>
+                    <td colspan="2"><input style="margin-left: 60px;" class="btn btn-primary" type="submit" value="Lưu"></td>
                 </tr>                    
             </table>
         </form:form>

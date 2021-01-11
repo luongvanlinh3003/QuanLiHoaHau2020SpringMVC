@@ -74,26 +74,17 @@
                     <a class="hi" href="#">Nội dung vòng chung kết</a>
                  </div>
             </li>
-            <li class="nav-item active">
-              
-                <div class="dropdown">
-                  <a style="margin: 0 20px;color: white!important;" href="#">ĐẶT VÉ</a>
-                  <div class="dropdown-content">
-                    <a class="hi" href="#">THÔNG TIN ĐẶT VÉ</a>
-                    <a class="hi" href="#">VÒNG BÁN KẾT</a>
-                    <a class="hi" href="#">VÒNG CHUNG KẾT</a>
-                  </div>
-            </li>
+            
             <li class="nav-item active">
                 <a style="margin: 0 20px;color: white!important;" href="#">ĐỐI TÁC</a>
             </li>
           </ul>
           <ul class="navbar-nav active">
             <li class="nav-item">
-              <a class="nav-link hh" href="#">Đăng nhập</a>
+              <a class="nav-link hh" href="admin">Đăng nhập</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link hh" href="#">Đăng kí</a>
+                <a class="nav-link hh" href="dangki">Đăng kí</a>
             </li>
           </ul>
         </div>
@@ -161,8 +152,8 @@
             <div><img src="<c:url value="/resources/image/miss2.jpg"/>" width="550px" height="300px"></div> 
             &emsp;&emsp;&emsp;&emsp;&emsp;
             <div>
-             <h5 style="color: black;">Hoa hậu Hoàn vũ</h5>
-             <p style="color: black;">Hoa hậu Hoàn vũ là cuộc thi sắc đẹp hấp dẫn bậc nhất hành tinh. Mỗi năm, cuộc thi thu hút hơn 1 tỷ khán giả theo dõi, và nhận được hơn 90 quốc gia cử thí sinh tham dự. Vương miện Miss Universe là niềm khao khát của rất nhiều cô gái. Đương kim Miss Universe là Catriona Gray - Hoa hậu đến từ Philippines.</p>
+             <h5 style="color: white-space;">Hoa hậu Hoàn vũ</h5>
+             <p style="color: white-space;">Hoa hậu Hoàn vũ là cuộc thi sắc đẹp hấp dẫn bậc nhất hành tinh. Mỗi năm, cuộc thi thu hút hơn 1 tỷ khán giả theo dõi, và nhận được hơn 90 quốc gia cử thí sinh tham dự. Vương miện Miss Universe là niềm khao khát của rất nhiều cô gái. Đương kim Miss Universe là Catriona Gray - Hoa hậu đến từ Philippines.</p>
             </div>
          </div>
       </div>

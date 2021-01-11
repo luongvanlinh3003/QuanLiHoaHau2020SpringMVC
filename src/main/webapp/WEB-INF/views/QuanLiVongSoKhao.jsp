@@ -7,9 +7,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Quản lí thông tin thí sinh</title>
+<title>Quản lí vòng sơ khảo</title>
 <jsp:include page="Header.jsp"></jsp:include>
 <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>"/>
+<style type="text/css">
+</style>
 </head>
 <body>
 	
@@ -86,22 +88,25 @@
        
     <form method="get" action="search">
         <input type="text" name="keyword" /> &nbsp;
-        <input type="submit" value="Tìm kiếm thí sinh" />
+        <input class="btn btn-info" type="submit" value="Tìm kiếm thí sinh" />
     </form>
-    <h3><a href="/QuanLiHoaHau2020/admin">Quay về trang chủ admin</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/new">Nhập điểm thí sinh dự thi</a></h3>
-    <h3><a id ="clickDtb" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemtrungbinh">Tổng điểm vòng sơ khảo</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao">Danh sách thí sinh</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/savetothisinh">Lưu thí sinh từ danh sách đăng ký dự thị</a></h3>
     
-    <table border="1" cellpadding="5" id="table-sanpham" class="table">
+    <div class="button-first">
+    <div><a href="/QuanLiHoaHau2020/admin"><button class="btn btn-primary">Quay về trang chủ admin</button></a></div>
+   	<div><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/new"><button class="btn btn-primary">Nhập điểm thí sinh dự thi</button></a></div>
+    <div><a id ="clickDtb" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemtrungbinh"><button class="btn btn-primary">Tổng điểm vòng sơ khảo</button></a></div>
+    <div><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao"><button class="btn btn-primary">Danh sách thí sinh</button></a></div>
+    <div><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/savetothisinh"><button class="btn btn-primary">Lưu thí sinh từ danh sách đăng ký dự thị</button></a></div>
+    </div>
+    
+    <table border="1" cellpadding="5" class="table table-dark table-hover table-bordered">
     <thead>	
         <tr>
             <th>Mã thí sinh</th>
             <th>Tên thí sinh</th>
-            <th ><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemhinhthe">Điểm Hình Thể</a></th>
-            <th><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemtraloiphongvan">Điểm trả lời phỏng vấn</a></th>
-            <th><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemcatwalk">Điểm Catwalk theo nhạc</a></th>
+            <th>Điểm Hình Thể<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemhinhthe"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th>
+            <th>Điểm trả lời phỏng vấn<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemtraloiphongvan"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th>
+            <th>Điểm Catwalk theo nhạc<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemcatwalk"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th>
             <th>Chức năng</th>
         </tr>
      </thead>
@@ -129,10 +134,10 @@
            <c:if test="${thisinh.getDiemCatwalkTheoNhac()!=null}">
            	<td>${thisinh.getDiemCatwalkTheoNhac()}</td>
            </c:if>
-            <td>
-                <a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/edit?MaThiSinh=${thisinh.getMaThiSinh()}">Nhập và sửa điểm</a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');">Xóa</a>
+            <td class="button-actions">
+                <a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/edit?MaThiSinh=${thisinh.getMaThiSinh()}"><button class="btn btn-info badge-pill">Sửa</button></a>
+                
+                <a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');"><button class="btn btn-danger badge-pill">Xóa</button></a>
             </td>
         </tr>
         </c:forEach>

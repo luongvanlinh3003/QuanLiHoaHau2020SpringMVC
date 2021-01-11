@@ -55,16 +55,7 @@
                     <a class="hi" href="#">Nội dung vòng chung kết</a>
                  </div>
             </li>
-            <li class="nav-item active">
-              
-                <div class="dropdown">
-                  <a class="nav-link hh" href="#">ĐẶT VÉ</a>
-                  <div class="dropdown-content">
-                    <a class="hi" href="#">THÔNG TIN ĐẶT VÉ</a>
-                    <a class="hi" href="#">VÒNG BÁN KẾT</a>
-                    <a class="hi" href="#">VÒNG CHUNG KẾT</a>
-                  </div>
-            </li>
+            
             <li class="nav-item active">
                 <a class="nav-link hh" href="#">ĐỐI TÁC</a>
             </li>

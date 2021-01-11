@@ -55,16 +55,7 @@
                     <a class="hi" href="#">Nội dung vòng chung kết</a>
                  </div>
             </li>
-            <li class="nav-item active">
-              
-                <div class="dropdown">
-                  <a class="nav-link hh" href="#">ĐẶT VÉ</a>
-                  <div class="dropdown-content">
-                    <a class="hi" href="#">THÔNG TIN ĐẶT VÉ</a>
-                    <a class="hi" href="#">VÒNG BÁN KẾT</a>
-                    <a class="hi" href="#">VÒNG CHUNG KẾT</a>
-                  </div>
-            </li>
+           
             <li class="nav-item active">
                 <a class="nav-link hh" href="#">ĐỐI TÁC</a>
             </li>
@@ -93,7 +84,8 @@
                 <div class="col-sm-3">
                 	<a href="thisinh/${thisinh.getMaThiSinh()}" style="text-decoration: none;">
                     	<img src="<c:url value="/resources/image/${thisinh.getAnhChanDung()}"/>"  class="card-img-top" alt="..."  width="100%" height="382px"><br>
-                    	<span style="font-size: 1em;font-weight: bold;color: black;font-family: sans-serif;">${thisinh.getTenThiSinh()}</span><br>
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	<span style="font-size: 1em;font-weight: bold;color: black;font-family: sans-serif;margin-left: 20px;">${thisinh.getTenThiSinh()}</span><br>
                     </a>
                 </div>
                 

@@ -62,17 +62,7 @@
                     <a class="hi" href="#">Nội dung vòng chung kết</a>
                  </div>
             </li>
-            <li class="nav-item active">
-              
-                <div class="dropdown">
-                  <a class="nav-link hh" href="#">ĐẶT VÉ</a>
-                  <div class="dropdown-content">
-                    <a class="hi" href="#">THÔNG TIN ĐẶT VÉ</a>
-                    <a class="hi" href="#">VÒNG BÁN KẾT</a>
-                    <a class="hi" href="#">VÒNG CHUNG KẾT</a>
-                  </div>
-                </div>  
-            </li>
+            
             <li class="nav-item active">
                 <a style="padding: 5px;" class="nav-link active" href="#">ĐỐI TÁC</a>
             </li>
@@ -82,19 +72,27 @@
     </nav>
 	
 	<div align="center">
-    <h2> Quản lí thông tin thí sinh dự thị hoa hậu hoàn vũ 2020</h2>
+    <h2> Quản lí thông tin thí sinh dự thi hoa hậu hoàn vũ 2020</h2>
      
     <form method="get" action="search">
         <input type="text" name="keyword" /> &nbsp;
-        <input type="submit" value="Tìm kiếm thí sinh" />
+        <input class="btn btn-info" type="submit" value="Tìm kiếm thí sinh" />
     </form>
-    
-    <div style="">
-    <a href="/QuanLiHoaHau2020/admin"><button  class="btn btn-primary">Quay về trang chủ admin</button></a><br>
-    <a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/new"><button  class="btn btn-primary">Thêm thí sinh dự thi</button></a>
-    </div>
-    <table border="1" cellpadding="5" id="table-sanpham" class="table table-bordered">
-    <thead>	
+
+		<div
+			class="button-first">
+			<div>
+				<a href="/QuanLiHoaHau2020/admin"><button
+						class="btn btn-primary">Quay về trang chủ admin</button></a><br>
+			</div>
+			<div>
+				<a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/new"><button
+						class="btn btn-primary">Thêm thí sinh dự thi</button></a>
+			</div>
+		</div>
+
+		<table border="1" cellpadding="3" id="table-sanpham" class="table table-dark table-hover table-bordered">
+    <thead style="font-size: 11px;text-align: center;">	
         <tr>
             <th>Mã thí sinh</th>
             <th>Tên thí sinh</th>
@@ -112,7 +110,7 @@
             <th>Chức năng</th>
         </tr>
      </thead>
-     <tbody>   
+     <tbody style="font-size: 11px; text-align: center;">   
         <c:forEach items="${listThongTinThiSinh}" var="thisinh" varStatus="itr">
         <tr>
             <td>${thisinh.getMaThiSinh()}</td>
@@ -128,10 +126,10 @@
             <td>${thisinh.getSoDoVong3()}</td>
             <td>${thisinh.getChieuCao()} m</td>  
             <td>${thisinh.getCanNang()}</td>           
-            <td>
-                <a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/edit?MaThiSinh=${thisinh.getMaThiSinh()}"><button class="btn btn-info">Sửa</button></a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');"><button style="" class="btn btn-danger">Xóa</button></a>
+            <td class="button-actions-thongtinthisinh">
+                <a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/edit?MaThiSinh=${thisinh.getMaThiSinh()}" ><button class="btn btn-info badge-pill">Sửa</button></a>
+                
+                <a href="/QuanLiHoaHau2020/admin/quanlithongtinthisinh/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');"><button class="btn btn-danger badge-pill">Xóa</button></a>
             </td>
         </tr>
         </c:forEach>

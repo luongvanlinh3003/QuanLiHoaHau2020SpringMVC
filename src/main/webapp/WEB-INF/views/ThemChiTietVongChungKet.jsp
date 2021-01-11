@@ -65,16 +65,7 @@
 							href="#">Nội dung vòng bán kết</a> <a class="hi" href="#">Nội
 							dung vòng chung kết</a>
 					</div></li>
-				<li class="nav-item active">
-
-					<div class="dropdown">
-						<a class="nav-link hh" href="#">ĐẶT VÉ</a>
-						<div class="dropdown-content">
-							<a class="hi" href="#">THÔNG TIN ĐẶT VÉ</a> <a class="hi"
-								href="#">VÒNG BÁN KẾT</a> <a class="hi" href="#">VÒNG CHUNG
-								KẾT</a>
-						</div>
-				</li>
+				
 				<li class="nav-item active"><a class="nav-link hh" href="#">ĐỐI
 						TÁC</a></li>
 			</ul>
@@ -88,7 +79,7 @@
 	</nav>
 
 	<div align="center">
-		<h2>Nhập điểm thi vòng chung kết hoa hậu hoàn vũ 2020</h2>
+		<h2 class="custom-title">Nhập điểm thi vòng chung kết hoa hậu hoàn vũ 2020</h2>
 
 		<form:form action="save" method="post"
 			modelAttribute="chitietvongchungket" enctype="multipart/form-data">
@@ -116,7 +107,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><input type="submit" value="Lưu"></td>
+					<td colspan="2"><input style="margin-left: 60px;" class="btn btn-primary" type="submit" value="Lưu"></td>
 				</tr>
 			</table>
 		</form:form>

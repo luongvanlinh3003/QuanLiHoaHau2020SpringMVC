@@ -6,27 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hoahau.dao.ChiTietVongSoKhaoDao;
-import com.hoahau.dao.PhanTrangDaoChiTietVongSoKhao;
 import com.hoahau.daoImp.ChiTietVongSoKhaoImpl;
-import com.hoahau.daoImp.PhanTrangImplChiTietVongSoKhao;
 import com.hoahau.entity.ChiTietVongSoKhao;
 
 @Service
-public class ChiTietVongSoKhaoService implements ChiTietVongSoKhaoImpl,PhanTrangImplChiTietVongSoKhao {
+public class ChiTietVongSoKhaoService implements ChiTietVongSoKhaoImpl{
 	@Autowired
 	private ChiTietVongSoKhaoDao chitietvongsokhaodao;
-	@Autowired
-	private PhanTrangDaoChiTietVongSoKhao phantrangdao;
-
-	@Override
-	public List<ChiTietVongSoKhao> findAll(Integer offset, Integer maxResult) {
-		return phantrangdao.findAll(offset, maxResult);
-	}
-
-	@Override
-	public Long count() {
-		return phantrangdao.count();
-	}
 
 	@Override
 	public List<ChiTietVongSoKhao> listChiTietVongSoKhao() {

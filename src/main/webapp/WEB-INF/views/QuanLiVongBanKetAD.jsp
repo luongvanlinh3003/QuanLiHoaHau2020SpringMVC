@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Quản lí thông tin thí sinh</title>
+<title>Quản lí vòng bán kết áo dài</title>
 <jsp:include page="Header.jsp"></jsp:include>
 <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>"/>
 </head>
@@ -82,26 +82,28 @@
     </nav>
 	
 	<div align="center">
-    <h2> Quản lí vòng sơ khảo hoa hậu hoàn vũ 2020</h2>
+    <h2> Quản lí vòng bán kết hoa hậu hoàn vũ 2020</h2>
        
     <form method="get" action="search">
         <input type="text" name="keyword" /> &nbsp;
-        <input type="submit" value="Tìm kiếm thí sinh" />
+        <input class="btn btn-info" type="submit" value="Tìm kiếm thí sinh" />
     </form>
-    <h3><a href="/QuanLiHoaHau2020/admin">Quay về trang chủ admin</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/new">Nhập điểm thí sinh dự thi</a></h3>
-    <h3><a id ="clickDtb" href="/QuanLiHoaHau2020/admin/quanlivongsokhao/diemtrungbinh">Tổng điểm vòng sơ khảo</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao">Danh sách thí sinh</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongsokhao/savetothisinh">Lưu thí sinh từ danh sách thí sinh</a></h3>
     
-    <table border="1" cellpadding="5" id="table-sanpham" class="table">
+    <div class="button-first">
+	    <div><a href="/QuanLiHoaHau2020/admin"><button class="btn btn-primary">Quay về trang chủ admin</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongbanket/new"><button class="btn btn-primary">Nhập điểm thí sinh dự thi</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemtrungbinh"><button class="btn btn-primary">Tổng điểm vòng bán kết</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongbanket"><button class="btn btn-primary">Danh sách thí sinh</button></a></div>
+    </div>
+    
+    <table border="1" cellpadding="5" class="table table-dark table-hover table-bordered">
     <thead>	
         <tr>
             <th>Mã thí sinh</th>
             <th>Tên thí sinh</th>
-            <th ><a href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemaodai">Điểm Trang Phục Áo Dài</a></th>
-            <th><a href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemaotam">Điểm Trang Phục Áo Tắm</a></th>
-            <th><a href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemdahoi">Điểm Trang Phục Dạ Hội</a></th>
+           	<th>Điểm Trang Phục Áo Dài<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemaodai"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th>
+           <!--  <th>Điểm Trang Phục Áo Tắm<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemaotam"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th>
+            <th>Điểm Trang Phục Dạ Hội<a class="link-sort" href="/QuanLiHoaHau2020/admin/quanlivongbanket/diemdahoi"><i class="fas fa-sort-numeric-down-alt"></i><i class="fas fa-sort-numeric-up-alt"></i></a></th> -->
             <th>Chức năng</th>
         </tr>
      </thead>
@@ -121,19 +123,19 @@
            	<td></td>
            </c:if>
            
-            <c:if test="${thisinh.getDiemTrangPhucAoDai()!=null}">
+           <c:if test="${thisinh.getDiemTrangPhucAoDai()!=null}">
            	 <td>${thisinh.getDiemTrangPhucAoDai()}</td>
            </c:if>
-           <c:if test="${thisinh.getDiemTrangPhucAoTam()!=null}">
+           <%-- <c:if test="${thisinh.getDiemTrangPhucAoTam()!=null}">
            	<td>${thisinh.getDiemTrangPhucAoTam()}</td>
            </c:if>
            <c:if test="${thisinh.getDiemTrangPhucDaHoi()!=null}">
            	<td>${thisinh.getDiemTrangPhucDaHoi()}</td>
-           </c:if>
-            <td>
-                <a href="/QuanLiHoaHau2020/admin/quanlivongbanket/edit?MaThiSinh=${thisinh.getMaThiSinh()}">Nhập và sửa điểm</a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="/QuanLiHoaHau2020/admin/quanlivongbanket/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');">Xóa</a>
+           </c:if> --%>
+           <td class="button-actions">
+                <a href="/QuanLiHoaHau2020/admin/quanlivongbanket/edit?MaThiSinh=${thisinh.getMaThiSinh()}"><button class="btn btn-info badge-pill">Sửa</button></a>
+              
+                <a href="/QuanLiHoaHau2020/admin/quanlivongbanket/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');"><button class="btn btn-danger badge-pill">Xóa</button></a>
             </td>
         </tr>
         </c:forEach>

@@ -362,4 +362,41 @@ ul{
 }
 /** end css login **/
 
+/** css button-actions **/
+.button-actions-thongtinthisinh > a > button{
+	margin: 5px 0;
+	
+}
+.button-first{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%; 
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.button-first > div{
+	padding-right: 8px;
+}
+.button-actions > a > button{
+	width: 40%;
+	margin: 0 6px;
+	text-align: center;
+}
+
+i{
+	font-size: 20px;
+	padding: 0 8px;
+}
+.link-sort{
+	float: right;
+	text-decoration: none;
+}
+thead,tbody {
+	text-align: center;
+}
+.custom-title{
+	margin-top:25px;
+	margin-bottom: 25px;
+}
+
  

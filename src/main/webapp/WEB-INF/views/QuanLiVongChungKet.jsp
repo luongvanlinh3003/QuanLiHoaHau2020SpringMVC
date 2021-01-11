@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Quản lí thông tin thí sinh</title>
+<title>Quản lí vòng chung kết	</title>
 <jsp:include page="Header.jsp"></jsp:include>
 <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>"/>
 </head>
@@ -86,14 +86,18 @@
         
     <form method="get" action="search">
         <input type="text" name="keyword" /> &nbsp;
-        <input type="submit" value="Tìm kiếm thí sinh" />
+        <input class="btn btn-info" type="submit" value="Tìm kiếm thí sinh" />
     </form>
-    <h3><a href="/QuanLiHoaHau2020/admin">Quay về trang chủ admin</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/new">Nhập điểm thí sinh dự thi</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/diemtrungbinh">Tổng điểm vòng chung kết</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongchungket">Danh sách thí sinh</a></h3>
-    <h3><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/savetovongbanket">Lưu thi sinh vòng bán kết</a></h3>
-    <table border="1" cellpadding="5" id="table-sanpham" class="table">
+    
+    <div class="button-first">
+	    <div><a href="/QuanLiHoaHau2020/admin"><button class="btn btn-primary">Quay về trang chủ admin</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/new"><button class="btn btn-primary">Nhập điểm thí sinh dự thi</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/diemtrungbinh"><button class="btn btn-primary">Tổng điểm vòng chung kết</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongchungket"><button class="btn btn-primary">Danh sách thí sinh</button></a></div>
+	    <div><a href="/QuanLiHoaHau2020/admin/quanlivongchungket/savetovongbanket"><button class="btn btn-primary">Lưu thi sinh vòng bán kết</button></a></div>
+    </div>
+    
+    <table border="1" cellpadding="5" class="table table-dark table-hover table-bordered">
     <thead>	
         <tr>
             <th>Mã thí sinh</th>
@@ -112,10 +116,10 @@
             <td>${thisinh.getDiemUngXu()}</td>
             <td>${thisinh.getDiemNgoaiNgu()}</td>
             <td>${thisinh.getDiemHoatDongXaHoi()}</td>       
-            <td>
-                <a href="/QuanLiHoaHau2020/admin/quanlivongchungket/edit?MaThiSinh=${thisinh.getMaThiSinh()}">Nhập và sửa điểm</a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="/QuanLiHoaHau2020/admin/quanlivongchungket/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');">Xóa</a>
+            <td class="button-actions">
+                <a href="/QuanLiHoaHau2020/admin/quanlivongchungket/edit?MaThiSinh=${thisinh.getMaThiSinh()}"><button class="btn btn-info badge-pill">Sửa</button></a>
+              
+                <a href="/QuanLiHoaHau2020/admin/quanlivongchungket/delete/${thisinh.getMaThiSinh()}" onclick="return confirm('Bạn chắc chắn muốn xóa không!');"><button class="btn btn-danger badge-pill">Xóa</button></a>
             </td>
         </tr>
         </c:forEach>

@@ -150,7 +150,7 @@
                     <td><form:input path="CanNang" /></td>
                 </tr>           
                 <tr>
-                    <td colspan="2"><input type="submit" value="Lưu"></td>
+                    <td colspan="2"><input style="margin-left: 60px;" class="btn btn-primary" type="submit" value="Lưu"></td>
                 </tr>                    
             </table>
         </form:form>

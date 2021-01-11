@@ -28,4 +28,8 @@ public class TrangChuController {
 		return "VongChungKet";
 	}
 	
+	@GetMapping("dangki")
+	public String dangki() {
+		return "signup";
+	}
 }

@@ -110,30 +110,19 @@
 				<div id="container-center-login-right" >
 						<!-- invalid credentials error msg -->
 						<c:if test="${not empty error}">
-							<div class="error">${error}</div>
+							<div style="color: red;font-size: 15px;" class="error">${error}</div>
 						</c:if>
 
 						<!-- logged out msg -->
 						<c:if test="${not empty msg}">
-							<div class="msg">${msg}</div>
+							<div style="color: blue;font-size: 15px;" class="msg">${msg}</div>
 						</c:if>
 						<form name="loginform" action="<c:url value='/login'/>" method="POST" class="container-login-form" id="container-center-login-right">
-						<input id="tendangnhap" class="material-text-input input-icon-user" placeholder="Tên Đăng Nhập" name="username"  type="text"/><br>
-						<input id="matkhau" class="material-text-input input-icon-password" placeholder="Mật khẩu" name="password" type="password"/><br>
-						<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG NHẬP"/><br>
-						<div id="ketqua" style="margin-top: 10px; text-align: center;color: red;font-weight: bold;"></div>	
-					</form>
-					<div class="container-signup-form" id="container-center-login-right">
-						<form action="" method="post">
-							<input id="tendangnhap" class="material-text-input input-icon-user" placeholder="Tên Đăng Nhập" name="tendangnhap"  type="text"/><br>
-							<input id="email" class="material-text-input input-icon-email" placeholder="Email" name="email" type="text"/><br>
-							<input id="diachi" class="material-text-input input-icon-home" placeholder="Địa chỉ" name="diachi" type="text"/><br>
-							<input id="matkhau" class="material-text-input input-icon-password" placeholder="Mật khẩu" name="matkhau" type="password"/><br><p></p>
-							<input id="nhaplaimatkhau" class="material-text-input input-icon-password" placeholder="Nhập lại Mật khẩu" name="nhaplaimatkhau" type="password"/><br>
-							<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG KÝ"/><br>
-							<div style="margin-top: 10px;text-align: center;color: red;font-weight: bold;">${kiemtradangky}</div>
-						</form>	
-					</div>
+							<input id="tendangnhap" class="material-text-input input-icon-user" placeholder="Tên Đăng Nhập" name="username"  type="text"/><br>
+							<input id="matkhau" class="material-text-input input-icon-password" placeholder="Mật khẩu" name="password" type="password"/><br>
+							<input id="btnDangNhap" class="material-primary-button" type="submit" value="ĐĂNG NHẬP"/><br>
+							<div id="ketqua" style="margin-top: 10px; text-align: center;color: red;font-weight: bold;"></div>	
+						</form>
 				</div>
 				<div id="container-social-login" >
 					<img alt="icon_oval" src="<c:url value="/resources/image/icon_facebook.png"/>"/>
