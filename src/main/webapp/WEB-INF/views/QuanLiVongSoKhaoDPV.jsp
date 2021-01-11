@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Quản lí thông tin thí sinh</title>
+<title>Quản lí vòng sơ khảo phỏng vấn</title>
 <jsp:include page="Header.jsp"></jsp:include>
 <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>"/>
 </head>
